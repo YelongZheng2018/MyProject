@@ -1,0 +1,17 @@
+#默认使用配置
+spring:
+  profiles:
+    active: dev
+
+#前端模板热部署
+
+  thymeleaf:
+    cache: false
+
+#公共配置与profiles选择无关
+mybatis:
+  #指定bean文件的路径
+  typeAliasesPackage: com.myproject.bean
+  #指定xml路径
+  mapperLocations: classpath:mapper/**/*.xml
+
